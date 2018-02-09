@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adiguzel.anil.smartwage.SettingsActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth Settings" />
+
+    <Button
+        android:id="@+id/btnONOFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="ON/OFF" />
+
+       <Button
+        android:id="@+id/btnDiscoverable_on_off"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="btnEnableDisable_Discoverable"
+        android:text="Enable Discoverable" />
+
+    <Button
+        android:id="@+id/btnFindUnpairedDevices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnDiscover"
+        android:text="Discover" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Bluetooth List" />
+
+    <ListView
+        android:id="@+id/lvNewDevices"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_below="@+id/btnStartConnection"
+        android:layout_marginTop="5dp"
+        android:scrollbars="horizontal|vertical" />
+
+    <Button
+        android:id="@+id/btnStartConnection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnFindUnpairedDevices"
+        android:layout_marginTop="5dp"
+        android:text="Start Connection" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lvNewDevices"
+        android:hint="Enter SSID" />
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lvNewDevices"
+        android:hint="Enter Password" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvNewDevices"
+        android:layout_toRightOf="@+id/editText"
+        android:text="Send Connection Info" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lvNewDevices"
+        android:hint="Enter Email" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lvNewDevices"
+        android:hint="Enter EMAIL Password" />
+
+    <Button
+        android:id="@+id/btnSend2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvNewDevices"
+        android:layout_toRightOf="@+id/editText"
+        android:text="Send Account Info" />
+
+
+</LinearLayout>
